@@ -18,7 +18,7 @@ class DBConnector
     }
 
     /**
-     * Creatre a connection
+     * Create a connection
      */
     Private static function createConnection()
     {

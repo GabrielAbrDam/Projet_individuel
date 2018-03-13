@@ -1,4 +1,14 @@
 <?php
+
+/*if (session_id() == null){
+    echo"no Logged";
+}else{
+    session_start();
+echo("Hello! you're logged!()");
+}
+$_SESSION=[];
+echo session_destroy();*/
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     $username = $_POST['username'] ?? null;
@@ -37,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <HTML>
 	<head>
 		<meta charset="UTF-8">
-		<title>Projet Individuel PHP</title>		
+		<title>Register projet individuel PHP</title>		
 		<style>
 	    *{
 	     transition-duration: 0.3s;
@@ -88,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	<body >
 	<div class="bodyForm">
 	
-	<h1>Mutants Warehouse: <br/> My Little Poney </h1>
+	<h1>REGISTER <br/> My Warehouse: <br/> Little Poney </h1>
 
 	<form action="/index.php/register" method="POST" >
 	
@@ -130,13 +140,10 @@ if (! ($passwordSuccess ?? true)) {
 		<br/>
 		<br/>
 		<br/>
-		<button  type="submit">Sign In</button>
+		<button  type="submit">SUBMIT</button>
 		<br/>
-		<label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me </label>
-        <br/>
-        <button  type="submit"></button>
-  
+		<p><a href="http://localhost/public/index.php">Back</a></p><br/>
+        
 		<br/>
 		</form>
      </div>   
